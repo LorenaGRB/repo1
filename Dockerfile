@@ -4,6 +4,7 @@ FROM nginx:alpine
 # dejamos limpio la carpeta donde almacenaremos los archivos estáticos
 RUN rm -Rf /usr/share/ngnix/html/*
 
+COPY ./default.conf /etc/nginx/conf.d/default.conf
 # copiamos los archivos estáticos que se crean en el build desde la carpeta dist al 
 # origen dentro del contenedor creado
 COPY ./dist /usr/share/nginx/html

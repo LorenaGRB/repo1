@@ -18,7 +18,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/clients",
+        "http://localhost:80/clients",
         requestOptions
       );
       const result = await response.json();
@@ -39,7 +39,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/clients",
+        "http://localhost:80/clients",
         requestOptions
       );
       const result = await response.json();
